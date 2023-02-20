@@ -38,6 +38,10 @@
     <script type="text/javascript" src="./main.js" defer></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <ul v-if="casualEmails.length === 10">
+        <li v-for="email in casualEmails">{{email}}</li>
+      </ul>
+    </div>
   </body>
 </html>
